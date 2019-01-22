@@ -1,0 +1,329 @@
+//base page styles
+.elex-header {
+	text-align: center;
+	max-width: 825px;
+}
+
+.elex-header h1 {
+	padding-top: 0.3em;
+	line-height: 1.1em;
+}
+
+.elex-header h5,
+.elex-header h5 span {
+	text-transform: uppercase;
+	font-size: .9em;
+	letter-spacing: .08em;
+	padding-top: 40px;
+}
+
+.yearTag {
+    text-align:center;
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size:0.7em;
+    color:#aaaaaa;
+    margin:10px;
+}
+
+section.container-lg {
+	max-width: 700px !important;
+}
+
+p {
+	max-width: 520px;
+	font-size: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.elex-header h5 span {
+	font-size: .9em;
+	letter-spacing: .1em;
+}
+
+.elex-header h5 span,
+.elex-header .byline {
+	color: black;
+	font-weight: bold;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.elex-header .byline span {
+	font-weight: normal;
+}
+
+section.body {
+	padding-top: 20px;
+	margin-bottom: 45px;
+	max-width: 525px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section.body p {
+	max-width: 525px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h2 {
+	font-size: 1.4em;
+	line-height: 1.4em;
+	text-align: center;
+	font-family: 'Benton Sans';
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.rule {
+	margin-left: auto;
+	margin-right: auto;
+	width: 33%;
+	border-bottom: 1px solid #dfdfdf;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+}
+
+.mapboxgl-ctrl-logo, .mapboxgl-ctrl-attrib {
+	display:none !important;
+}
+
+#wrapper {
+	width: 520px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+//dataviz styles
+.powerline {
+	stroke-dasharray: 5, 5;
+	stroke: #333;
+}
+
+.slide {
+
+    width:800px;
+	margin-left:auto;
+    margin-right:auto;
+
+    .counter {
+        margin-left:auto;
+        margin-right:auto;
+        width:520px;
+    }
+    
+    .counter div {
+        display:inline-block;
+        width:49%;
+        text-align:center;
+        font-weight:bold;
+    }
+
+	.byline a {
+		color: #888 !important;
+	}
+	.byline {
+		line-height: 140%;
+		font-family: "Benton Sans", Helvetica, Arial, sans-serif;
+		font-weight: 400;
+		font-size: 0.6em;
+		color: #888;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		text-align: left;
+	}
+	.chart .c3-circle {
+		stroke-width: 4;
+	}
+	.chart .c3-line {
+		stroke-width: 6px !important;
+	}
+	.chart-tooltip {
+		background-color: rgba(0, 0, 0, 0.8);
+		color: #FFFFFF;
+		font-size: 0.85em;
+		padding: 0.5em 1em;
+		.tooltip-label {
+			font-weight: 900;
+			display: inline-block;
+			padding-right: 0.5em;
+		}
+	}
+	.legendary {
+		padding: 4px;
+		color: #fff;
+		font-weight: bold;
+		border-radius: 5px;
+		padding: 0 7px;
+		margin-bottom: 3px;
+		display: inline-block;
+	}
+	.chatter {
+		line-height: 140%;
+		font-size: 0.9em;
+	}
+	.chartTitle {
+		font-size: 1.5em;
+		font-weight: 900;
+	}
+
+	/*RED SHADED RAMP*/
+	.red1 {
+		fill: #F2AC93;
+		background-color: #F2AC93;
+	}
+	.red2 {
+		fill: #F28670;
+		background-color: #F28670;
+	}
+	.red3 {
+		fill: #F2614C;
+		background-color: #F2614C;
+	}
+	.red4 {
+		fill: #C22A22;
+		background-color: #C22A22;
+	}
+	.red5 {
+		fill: #9C0004;
+		background-color: #9C0004;
+	}
+	/*ORANGE SHADED RAMP*/
+	.orange1 {
+		fill: #F2D2A4;
+		background-color: #F2D2A4;
+	}
+	.orange2 {
+		fill: #F2AF80;
+		background-color: #F2AF80;
+	}
+	.orange3 {
+		fill: #E07242;
+		background-color: #E07242;
+	}
+	.orange4 {
+		fill: #C2421F;
+		background-color: #C2421F;
+	}
+	.orange5 {
+		fill: #822010;
+		background-color: #822010;
+	}
+	/*BLUE SHADED RAMP*/
+	.blue1 {
+		fill: #D1E6E1;
+		background-color: #D1E6E1;
+	}
+	.blue2 {
+		fill: #A7E6E3;
+		background-color: #A7E6E3;
+	}
+	.blue3 {
+		fill: #67B4C2;
+		background-color: #67B4C2;
+	}
+	.blue4 {
+		fill: #3580A3;
+		background-color: #3580A3;
+	}
+	.blue5 {
+		fill: #0D4673;
+		background-color: #0D4673;
+	}
+	/*GREEN SHADED RAMP*/
+	.green1 {
+		fill: #C7E5B5;
+		background-color: #C7E5B5;
+	}
+	.green2 {
+		fill: #9EE384;
+		background-color: #9EE384;
+	}
+	.green3 {
+		fill: #5BBF48;
+		background-color: #5BBF48;
+	}
+	.green4 {
+		fill: #299E3D;
+		background-color: #299E3D;
+	}
+	.green5 {
+		fill: #118241;
+		background-color: #118241;
+	}
+	/*GREY SHADED RAMP*/
+	.gray1 {
+		fill: #ddd;
+		background-color: #ddd;
+	}
+	.gray2 {
+		fill: #CCC;
+		background-color: #CCC;
+	}
+	.gray3 {
+		fill: #969696;
+		background-color: #969696;
+	}
+	.gray4 {
+		fill: #636363;
+		background-color: #636363;
+		color: #fff;
+	}
+	.gray5 {
+		fill: #333333;
+		background-color: #333333;
+		color: #fff;
+    }
+}
+
+text {
+	font-family: "Benton Sans", Helvetica, Arial, sans-serif !important;
+  }
+  
+  .pct {
+	  color:#ffffff;
+  }
+  
+  .background {
+	fill: none;
+	pointer-events: all;
+  }
+  
+  .states {
+	fill: #aaa;
+  }
+  
+  #state-borders {
+	fill: none;
+	stroke: #fff;
+	stroke-width: 2px;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+	pointer-events: none;
+  }
+  
+  .states .active {
+	fill: #333 !important;
+	fill-opacity: 1 !important;
+  }
+  
+  .faded {
+	fill-opacity: 0.5 !important;
+  }
+  
+  .states path:hover {
+	fill: #333 !important;
+  }
+
+  @media (max-width:800px) {
+    #wrapper, .slide, .map, .counter {
+        width: 100% !important;
+    }
+}
+@media (max-width:500px) {
+    #wrapper {
+        width: 100%;
+    }
+}
