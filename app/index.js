@@ -53,10 +53,12 @@ utils.environmentNoting();
 
 import BigMap from './bigmap.js';
 
-const bigmap1 = new BigMap("#map1");
-const bigmap2 = new BigMap("#map2");
-const bigmap3 = new BigMap("#map3");
+const bigmap0 = new BigMap('#map0');
+const bigmap1 = new BigMap('#map1');
+const bigmap2 = new BigMap('#map2');
+const bigmap3 = new BigMap('#map3');
 
+bigmap0.render();
 bigmap1.render();
 bigmap2.render();
 bigmap3.render();

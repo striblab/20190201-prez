@@ -1,7 +1,6 @@
 import 'intersection-observer';
 import us from '../sources/us_states.json';
 import * as d3 from 'd3';
-import * as topojson from 'topojson';
 
 class BigMap {
 
