@@ -68,14 +68,18 @@
       padding-right: 8px;
 			text-align: right;
 			font-variant-numeric: tabular-nums;
-    }
+
+		}
+		
+		.pct {
+			@media (max-width: 420px) {
+        display: none;
+      }
+		}
   
     .bar {
       width: 25%;
   
-      @media (max-width: 420px) {
-        display: none;
-      }
     }
   
     .bar .pctBar {
