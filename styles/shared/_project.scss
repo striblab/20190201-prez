@@ -66,7 +66,8 @@
     .votes,
     .pct {
       padding-right: 8px;
-      text-align: right;
+			text-align: right;
+			font-variant-numeric: tabular-nums;
     }
   
     .bar {
@@ -88,15 +89,71 @@
       font-size: 0.65em;
       color: #808080;
       font-style: italic;
-    }
-  
+		}
+		
     // PARTY STYLES
-  
+
     tr.party-dem,
     tr.party-dfl {
       td.winner span,
       td.bar span.pctBar {
         background-color: #0258a0;
+      }
+  
+      td.winner span.check {
+        font-family:"Popular";
+        font-weight:bold;
+        color: #0258a0;
+        background-color: #f5f5f5;
+      }
+		}
+	
+		tr.party-dem1 {
+      td.winner span,
+      td.bar span.pctBar {
+        background-color: #857AAA;
+      }
+  
+      td.winner span.check {
+        font-family:"Popular";
+        font-weight:bold;
+        color: #0258a0;
+        background-color: #f5f5f5;
+      }
+		}
+	
+		tr.party-dem2 {
+      td.winner span,
+      td.bar span.pctBar {
+        background-color: #7F98AA;
+      }
+  
+      td.winner span.check {
+        font-family:"Popular";
+        font-weight:bold;
+        color: #0258a0;
+        background-color: #f5f5f5;
+      }
+		}
+	
+		tr.party-dem3 {
+      td.winner span,
+      td.bar span.pctBar {
+        background-color: #A7E6E3;
+      }
+  
+      td.winner span.check {
+        font-family:"Popular";
+        font-weight:bold;
+        color: #0258a0;
+        background-color: #f5f5f5;
+      }
+		}
+	
+		tr.party-dem4 {
+      td.winner span,
+      td.bar span.pctBar {
+        background-color: #5BBF48;
       }
   
       td.winner span.check {
@@ -119,8 +176,64 @@
         color: #c0272d;
         background-color: #f5f5f5;
       }
-    }
+		}
+
+		tr.party-rep1 {
+      td.winner span,
+      td.bar span.pctBar {
+        background-color: #D4CB6A;
+      }
   
+      td.winner span.check {
+        font-family:"Popular";
+        font-weight:bold;
+        color: #c0272d;
+        background-color: #f5f5f5;
+      }
+		}
+		
+		tr.party-rep2 {
+      td.winner span,
+      td.bar span.pctBar {
+        background-color: #F2D2A4;
+      }
+  
+      td.winner span.check {
+        font-family:"Popular";
+        font-weight:bold;
+        color: #c0272d;
+        background-color: #f5f5f5;
+      }
+		}
+		
+		tr.party-rep3 {
+      td.winner span,
+      td.bar span.pctBar {
+        background-color: #F2614C;
+      }
+  
+      td.winner span.check {
+        font-family:"Popular";
+        font-weight:bold;
+        color: #c0272d;
+        background-color: #f5f5f5;
+      }
+		}
+		
+		tr.party-rep4 {
+      td.winner span,
+      td.bar span.pctBar {
+        background-color: #dddddd;
+      }
+  
+      td.winner span.check {
+        font-family:"Popular";
+        font-weight:bold;
+        color: #c0272d;
+        background-color: #f5f5f5;
+      }
+		}
+		
     tr.party-lib,
     tr.party-ind,
     tr.party-idp,
@@ -159,6 +272,29 @@
 	  color:#000000;
 	}
   }
+
+
+	.state-block {
+		height:30px;
+		width:30px;
+		color:#ffffff;
+		padding:6px;
+		font-weight:bold;
+		font-size:0.7em;
+		display:inline-block;
+	}
+
+	.dfl {
+		background-color: #0258a0;
+	}
+
+	.rep {
+		background-color: #c0272d;
+	}
+
+	.rep2 {
+		background-color: #F2D2A4;
+	}
 
 
 //base page styles
@@ -266,6 +402,15 @@ h2 {
 }
 
 .slide {
+
+	.otherLegend {
+		text-align:center;
+		display:block !important;
+		margin-left:auto;
+		width:auto !important;
+		margin-right:auto;
+	}
+
 
     width:800px;
 	margin-left:auto;
@@ -446,7 +591,8 @@ text {
   }
   
   .pct {
-	  color:#ffffff;
+		color:#ffffff;
+		font-variant-numeric: tabular-nums;
   }
   
   .background {
