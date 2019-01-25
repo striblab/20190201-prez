@@ -57,6 +57,16 @@ class BigMap {
                     else if (d.properties.STUSPS == "MN" || d.properties.STUSPS == "IA" || d.properties.STUSPS == "LA" || d.properties.STUSPS == "ME") { return "#F2D2A4"; }
                     else if (d.properties.STUSPS == "GA" || d.properties.STUSPS == "SC") { return "#F2614C"; }
                     else { return "#c0272d"; }
+                } else if (self.race == 4) {
+                    if (d.properties.STUSPS == "CA") { return "#F2614C"; }
+                    else if (d.properties.STUSPS == "NE" || d.properties.STUSPS == "WI" || d.properties.STUSPS == "WV" || d.properties.STUSPS == "PA") { return "#D4CB6A"; }
+                    else if (d.properties.STUSPS == "OH") { return "#F2D2A4"; }
+                    else if (d.properties.STUSPS == "OR") { return "#c0272d"; }
+                    else if (d.properties.STUSPS == "IL") { return "#E562AC"; }
+                    else if (d.properties.STUSPS == "MA") { return "#8B4513"; }
+                    else if (d.properties.STUSPS == "SD") { return "#DAA520"; }
+                    else if (d.properties.STUSPS == "NH") { return "#999999"; }
+                    else { return "#dddddd"; }
                 }
             })
             .style("stroke-width", "1")

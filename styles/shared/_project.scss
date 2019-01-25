@@ -227,7 +227,7 @@
 		tr.party-rep4 {
       td.winner span,
       td.bar span.pctBar {
-        background-color: #dddddd;
+        background-color: #E562AC;
       }
   
       td.winner span.check {
@@ -237,7 +237,35 @@
         background-color: #f5f5f5;
       }
 		}
-		
+
+		tr.party-rep5 {
+      td.winner span,
+      td.bar span.pctBar {
+        background-color: #8B4513;
+      }
+  
+      td.winner span.check {
+        font-family:"Popular";
+        font-weight:bold;
+        color: #c0272d;
+        background-color: #f5f5f5;
+      }
+		}
+
+		tr.party-rep6 {
+      td.winner span,
+      td.bar span.pctBar {
+        background-color: #DAA520;
+      }
+  
+      td.winner span.check {
+        font-family:"Popular";
+        font-weight:bold;
+        color: #c0272d;
+        background-color: #f5f5f5;
+      }
+		}
+
     tr.party-lib,
     tr.party-ind,
     tr.party-idp,
@@ -282,7 +310,7 @@
 		height:30px;
 		width:30px;
 		color:#ffffff;
-		padding:6px;
+		padding:6.47px;
 		font-weight:bold;
 		font-size:0.7em;
 		display:inline-block;
@@ -330,7 +358,7 @@
     font-weight:bold;
     font-size:0.7em;
     color:#aaaaaa;
-    margin:10px;
+    margin:11px;
 }
 
 section.container-lg {
@@ -381,7 +409,7 @@ h2 {
 	text-align: center;
 	font-family: 'Benton Sans';
 	font-weight: bold;
-	margin-bottom: 20px;
+	margin-bottom: 12px;
 }
 
 .rule {
@@ -642,5 +670,8 @@ text {
 @media (max-width:500px) {
     #wrapper {
         width: 100%;
-    }
+		}
+		.state-block {
+			padding:8px !important;
+		}
 }

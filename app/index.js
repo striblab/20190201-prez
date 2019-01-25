@@ -57,7 +57,9 @@ const bigmap0 = new BigMap('#map0',0);
 const bigmap1 = new BigMap('#map1',1);
 const bigmap2 = new BigMap('#map2',2);
 const bigmap3 = new BigMap('#map3',3);
+const bigmap4 = new BigMap('#map4',4);
 
+bigmap4.render();
 bigmap0.render();
 bigmap1.render();
 bigmap2.render();
