@@ -30,3 +30,527 @@ $selector-wrapper: '.strib-styles.ssa.ssb.ssc';
   @import 'shared/_project';
 }
 
+
+
+//datawrapper styles
+#chart {
+  pointer-events: none !important;
+  width:520px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.chart {
+  font-family: "Benton Sans", Helvetica, Arial, sans-serif !important;;
+  color: #181818;
+  font-size: 12px;
+  background: transparent;
+  margin: 0 0px;
+  height: 100%;
+}
+.chart #header {
+  min-height: 1px;
+  position: relative;
+  overflow: auto;
+}
+.chart #header .header-right {
+  position: absolute;
+  right: 10px;
+  z-index: 20;
+}
+.chart h1 {
+  font-family: "Benton Sans", Helvetica, Arial, sans-serif !important;
+  font-weight: bold;
+  font-size: 22px;
+  font-style: normal;
+  text-decoration: none;
+  color: #000000;
+  margin: 0 0 10px;
+  text-align: left;
+}
+.chart p {
+  font-family: "Benton Sans", Helvetica, Arial, sans-serif !important;
+  font-weight: normal;
+  font-size: 14px;
+  font-style: normal;
+  text-decoration: none;
+  margin: 5px 0 10px !important;
+  line-height: 17px;
+}
+.chart .dw-chart-notes {
+  font-family: "Benton Sans", Helvetica, Arial, sans-serif !important;
+  font-weight: normal;
+  font-size: 12px;
+  font-style: italic;
+  text-decoration: none;
+  color: #656565;
+  margin-bottom: 5px;
+  position: relative;
+  margin-top: 10px;
+}
+.chart #footer,
+.chart .dw-chart-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Benton Sans", Helvetica, Arial, sans-serif !important;
+  font-weight: normal;
+  font-size: 11px;
+  font-style: normal;
+  text-decoration: none;
+  color: #888;
+}
+.chart #footer > div > .footer-block,
+.chart .dw-chart-footer > div > .footer-block {
+  display: inline-block;
+}
+.chart #footer > div > .footer-block.hidden,
+.chart .dw-chart-footer > div > .footer-block.hidden {
+  display: none;
+}
+.chart #footer > div > .footer-block a[href=""],
+.chart .dw-chart-footer > div > .footer-block a[href=""] {
+  color: #888;
+  pointer-events: none;
+  text-decoration: none;
+}
+.chart #footer > div > .footer-block .separator,
+.chart .dw-chart-footer > div > .footer-block .separator {
+  display: inline-block;
+  font-style: initial;
+}
+.chart #footer > div > .footer-block .separator:before,
+.chart .dw-chart-footer > div > .footer-block .separator:before {
+  content: "•";
+  display: inline-block;
+}
+.chart #footer > div .footer-block.hidden:first-child + .footer-block:not(.hidden) .separator,
+.chart #footer > div .footer-block.hidden:first-child
+              + .footer-block.hidden
+              + .footer-block:not(.hidden) .separator,
+.chart #footer > div .footer-block.hidden:first-child
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block:not(.hidden) .separator,
+.chart #footer > div .footer-block.hidden:first-child
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block:not(.hidden) .separator,
+.chart #footer > div .footer-block.hidden:first-child
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block:not(.hidden) .separator,
+.chart #footer > div .footer-block.hidden:first-child
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block:not(.hidden) .separator,
+.chart .dw-chart-footer > div .footer-block.hidden:first-child + .footer-block:not(.hidden) .separator,
+.chart .dw-chart-footer > div .footer-block.hidden:first-child
+              + .footer-block.hidden
+              + .footer-block:not(.hidden) .separator,
+.chart .dw-chart-footer > div .footer-block.hidden:first-child
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block:not(.hidden) .separator,
+.chart .dw-chart-footer > div .footer-block.hidden:first-child
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block:not(.hidden) .separator,
+.chart .dw-chart-footer > div .footer-block.hidden:first-child
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block:not(.hidden) .separator,
+.chart .dw-chart-footer > div .footer-block.hidden:first-child
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block.hidden
+              + .footer-block:not(.hidden) .separator {
+  display: none;
+}
+.chart #footer > div > a:first-child::before,
+.chart #footer > div > .source-block:first-child::before,
+.chart #footer > div > .footer-block:first-child::before,
+.chart .dw-chart-footer > div > a:first-child::before,
+.chart .dw-chart-footer > div > .source-block:first-child::before,
+.chart .dw-chart-footer > div > .footer-block:first-child::before {
+  content: "";
+  display: none;
+}
+.chart #footer a,
+.chart .dw-chart-footer a {
+  font-family: "Benton Sans", Helvetica, Arial, sans-serif !important;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  color: #18a1cd;
+}
+.chart a img {
+  border: 0px;
+}
+.chart .embed-code {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  padding: 15px;
+  background: #eee;
+  color: #000;
+  border-radius: 6px;
+  text-transform: none;
+  font-size: 1em;
+  box-shadow: 2px 2px 0px rgba(0,0,0,0.4);
+  z-index: 1;
+}
+.chart .embed-code textarea {
+  width: 90%;
+  margin-top: 2%;
+  height: 7em;
+}
+.chart .hide {
+  display: none;
+}
+.chart .embed-code .close {
+  cursor: pointer;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  font-size: 1.125em;
+  opacity: 0.7;
+}
+.chart .embed-code .close:hover {
+  opacity: 1;
+}
+.chart .label {
+  font-size: 12px;
+}
+.chart .label span {
+  color: #333;
+  text-shadow: 0 0 2px #fff;
+}
+.chart .label.inverted span {
+  text-shadow: 0 0px 2px #000000;
+  color: #fff;
+}
+.chart .label.outline span {
+  text-shadow: 0 1px 0 #FFFFFF, 1px 0 0 #FFFFFF, 0 -1px 0 #FFFFFF, -1px 0 0 #FFFFFF, 1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 0 2px 1px #FFFFFF, 2px 0 1px #FFFFFF, 0 -2px 1px #FFFFFF, -2px 0 1px #FFFFFF, -1px 2px 0px #FFFFFF, 2px -1px 0px #FFFFFF, -1px -2px 0px #FFFFFF, -2px -1px 0px #FFFFFF, 1px 2px 0px #FFFFFF, 2px 1px 0px #FFFFFF, 1px -2px 0px #FFFFFF, -2px 1px 0px #FFFFFF;
+}
+.chart .label.outline span sup {
+  text-shadow: none;
+}
+.chart .label.highlighted {
+  font-weight: bold;
+}
+.chart .label.highlighted,
+.chart .label .label.axis {
+  font-size: 12px;
+  z-index: 100;
+}
+.chart .label.hover {
+  font-weight: bold;
+}
+.chart .label.value span {
+  font-size: 12px;
+}
+.chart .label.series span {
+  font-size: 12px;
+}
+.chart .label.rotate90 {
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.chart .label.smaller span {
+  font-size: 80%;
+}
+.chart .tooltip {
+  z-index: 200;
+  padding-bottom: 0px;
+}
+.chart .tooltip .content {
+  background-color: #fff;
+  border: 1px solid #888;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  padding: 5px 8px;
+}
+.chart .tooltip label {
+  font-weight: 700;
+}
+.chart .tooltip label:after {
+  content: ": ";
+}
+.chart .logo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.chart .logo .big {
+  display: none;
+}
+.chart svg .axis,
+.chart svg .tick,
+.chart svg .grid,
+.chart svg rect {
+  shape-rendering: crispEdges;
+}
+.chart .filter-links {
+  height: 30px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-bottom: 1px solid #ccc;
+  font-size: 12px;
+}
+.chart .filter-links a {
+  color: #666;
+  height: 28px;
+  line-height: 28px;
+  padding: 10px;
+  text-decoration: none;
+}
+.chart .filter-links a:hover {
+  background: #fff;
+  color: #222;
+}
+.chart .filter-links a.active {
+  font-weight: bold;
+  color: #000;
+  box-shadow: none;
+  background: #fff;
+  cursor: default;
+  text-decoration: none;
+  border-bottom: 3px solid #555;
+  padding: 10px 10px 6px 10px;
+}
+.chart .filter-select {
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px 4px 4px 4px;
+  padding: 4px 6px;
+  vertical-align: middle;
+  font-size: 12px;
+}
+.chart.plain #footer {
+  height: 10px;
+}
+.chart.js .noscript {
+  display: none;
+}
+.chart .hidden {
+  display: none;
+}
+.chart .label.annotation span {
+  background: transparent;
+}
+.chart .legend-item.hover .label {
+  font-weight: bold;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+html[xmlns] .clearfix {
+  display: block;
+}
+* html .clearfix {
+  height: 1%;
+}
+.point {
+  border: 1px solid #ccc;
+  display: inline-block;
+  position: absolute;
+  background: #fff;
+  z-index: 100;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  top: 20px;
+}
+.point:hover {
+  background: #ebebeb;
+}
+.point.active {
+  background: #ccc;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  top: 20px;
+  border-color: #888;
+}
+.point-label {
+  position: absolute;
+}
+.line {
+  height: 1px;
+  background: #ccc;
+  position: absolute;
+  left: 0px;
+  top: 30px;
+  z-index: 1;
+}
+.vis-pie-chart path,
+.vis-donut-chart path,
+.vis-election-donut-chart path {
+  stroke-width: 0.5;
+}
+.dw-table {
+  width: 100%;
+  padding: 20px 0 20px 0;
+  margin: 0;
+}
+.dw-table th {
+  color: #b1b1b1;
+  font-weight: 400;
+  text-align: left;
+  vertical-align: bottom;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+.dw-table th.tablesorter-headerDesc:before {
+  content: '▼';
+  color: #b1b1b1;
+  margin-right: 6px;
+  float: left;
+  white-space: nowrap;
+}
+.dw-table th.tablesorter-headerAsc:before {
+  content: '▲';
+  color: #b1b1b1;
+  margin-right: 6px;
+  float: left;
+  white-space: nowrap;
+}
+.tablesorter-header {
+  font-family:"Benton Sans", Helvetica, Arial, sans-serif !important;
+  text-align:center !important;
+  color:#ffffff !important;
+}
+.text, .date {
+  font-family:"Benton Sans", Helvetica, Arial, sans-serif !important;
+  text-align:center !important;
+}
+.dw-table td {
+  padding: 10px 6px 10px 0px;
+  font-size: 14px;
+  font-weight: 300;
+  width: 4em;
+  overflow-x: hidden;
+  margin-left: 10px;
+  text-align: left;
+  border-top: 1px solid #eee;
+}
+.dw-table td.bold {
+  font-weight: bold !important;
+}
+.dw-table td.italic {
+  font-style: italic !important;
+}
+.dw-table td.underlined {
+  text-decoration: underline !important;
+}
+.dw-table td.no-top-border {
+  border-top: 0;
+}
+.dw-table td.fontsize1 {
+  font-size: 12px;
+  padding: 5px 1px 3px 0px;
+}
+.dw-table td.fontsize2 {
+  font-size: 14px;
+  padding: 7px 3px 5px 0px;
+}
+.dw-table td.fontsize3 {
+  font-size: 18px;
+  padding: 9px 5px 9px 0px;
+}
+.dw-table td.fontsize4 {
+  font-size: 20px;
+  padding: 10px 6px 10px 0px;
+}
+.dw-table td.fontsize5 {
+  font-size: 22px;
+  padding: 11px 7px 11px 0px;
+}
+.dw-table td.fontsize6 {
+  font-size: 24px;
+  padding: 12px 8px 12px 0px;
+}
+.dw-table td.fontsize7 {
+  font-size: 28px;
+  padding: 14px 10px 13px 0px;
+}
+.dw-table td.highlight {
+  font-weight: bold;
+}
+.dw-table tr.highlight-shaded {
+  background-color: rgba(113,113,113,0.11);
+}
+.dw-table th.rank {
+  font-weight: 600;
+  font-size: 11px;
+  width: 1px;
+}
+.dw-table td.rank {
+  font-weight: 600;
+  font-size: 11px;
+  padding-right: 8px;
+  padding-left: 8px;
+  width: 10px;
+}
+span.raw-sortable {
+  display: none;
+}
+td.highlight .bar {
+  height: 3px;
+  width: 0px;
+  border-radius: 3px;
+  display: inherit;
+}
+.dw-table tr.stripe {
+  background-color: rgba(0,0,0,0.02);
+}
+tbody tr:hover,
+tbody tr.stripe:hover {
+  background-color: rgba(0,0,0,0.05);
+}
+.toggle-hidden-rows {
+  color: #999;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 300;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  z-index: 100000;
+}
+.toggle-hidden-rows:hover {
+  text-decoration: underline;
+}
+#footer {
+  position: relative !important;
+}
+.dw-chart-header h1 {
+  font-weight: bold;
+  font-family: "Benton Sans", Helvetica, Arial, sans-serif !important;
+}
+.dw-chart-header p {
+  font-family: "Benton Sans", Helvetica, Arial, sans-serif !important;
+}
