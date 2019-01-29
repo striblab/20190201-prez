@@ -554,7 +554,7 @@ tbody tr.stripe:hover {
 .dw-chart-header p {
   font-family: "Benton Sans", Helvetica, Arial, sans-serif !important;
 }
-tr, td, .cell-content, thead {
-  font-size: 0.9em !important;
+#chart tr, #chart td, #chart .cell-content, #chart thead {
+  font-size: 0.88em !important;
   padding:2px !important;
 }
