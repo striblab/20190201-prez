@@ -84,7 +84,7 @@
   
     .bar .pctBar {
       display: block;
-      height: 5px;
+      height: 20px;
       border-radius: 2px;
       min-width: 2px;
     }
@@ -167,7 +167,14 @@
         background-color: #f5f5f5;
       }
     }
-  
+	
+		tr.party-null {
+      td.winner span,
+      td.bar span.pctBar {
+        background-color: #aaaaaa;
+      }
+		}
+
     tr.party-rep {
       td.winner span,
       td.bar span.pctBar {
@@ -672,6 +679,6 @@ text {
         width: 100%;
 		}
 		.state-block {
-			padding:8px !important;
+			padding:8.2px !important;
 		}
 }
