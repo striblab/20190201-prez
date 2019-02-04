@@ -33,6 +33,9 @@ $selector-wrapper: '.strib-styles.ssa.ssb.ssc';
 
 
 //datawrapper styles
+table {
+  pointer-events: none !important;
+}
 #chart {
   pointer-events: none !important;
   width:520px;
