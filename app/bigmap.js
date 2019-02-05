@@ -72,6 +72,29 @@ class BigMap {
             .style("stroke-width", "1")
             .attr("class","state")
 
+            g.append("g")
+            .attr("class", "states-names")
+            .selectAll("text")
+            .data(us.features)
+            .enter()
+            .append("svg:text")
+            .text(function(d){
+                if (d.properties.STUSPS != "MD" && d.properties.STUSPS != "CT" && d.properties.STUSPS != "MA" && d.properties.STUSPS != "RI" && d.properties.STUSPS != "VT" && d.properties.STUSPS != "NH" && d.properties.STUSPS != "DE" && d.properties.STUSPS != "NJ" && d.properties.STUSPS != "HI" && d.properties.STUSPS != "DC") { 
+                    return d.properties.STUSPS;
+                }
+            })
+            .attr("x", function(d){
+                if (d.properties.STUSPS == "LA" || d.properties.STUSPS == "CA") { return path.centroid(d)[0] - 7; }
+                else if (d.properties.STUSPS == "FL") { return path.centroid(d)[0] + 11; }
+                else if (d.properties.STUSPS == "MI") { return path.centroid(d)[0] + 8; }
+                else { return path.centroid(d)[0]; }
+            })
+            .attr("y", function(d){
+                if (d.properties.STUSPS == "MI") { return path.centroid(d)[1] + 15; }
+                else { return  path.centroid(d)[1] + 2; }
+            })
+            .attr("text-anchor","middle")
+            .attr('fill', 'white');
 
     var aspect = 800 / 500,
     chart = $(self.target + " svg");

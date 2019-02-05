@@ -323,6 +323,14 @@
 		display:inline-block;
 	}
 
+	.states-names {
+		font-weight:900 !important;
+		font-size:0.56em !important;
+		pointer-events:none !important;
+		// stroke: #000000 !important;
+		// stroke-width:0.2px !important;
+	}
+
 	.dfl {
 		background-color: #0258a0;
 	}
@@ -677,6 +685,10 @@ text {
 @media (max-width:500px) {
     #wrapper {
         width: 100%;
+		}
+		.states-names text {
+			opacity:0 !important;
+			display:none !important;
 		}
 		.state-block {
 			padding:8.2px !important;
