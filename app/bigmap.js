@@ -44,7 +44,7 @@ class BigMap {
                     else if (d.properties.STUSPS == "OH") { return "#7F98AA"; }
                     else if (d.properties.STUSPS == "NH") { return "#A7E6E3"; }
                     else if (d.properties.STUSPS == "FL") { return "#5BBF48"; }
-                    else { return "#dddddd"; }
+                    else { return "#cccccc"; }
                 } else if (self.race == 1) {
                     if (d.properties.STUSPS == "WA" || d.properties.STUSPS == "TX" || d.properties.STUSPS == "MN" || d.properties.STUSPS == "MI" || d.properties.STUSPS == "WV" || d.properties.STUSPS == "PA" || d.properties.STUSPS == "MD" || d.properties.STUSPS == "CT" || d.properties.STUSPS == "RI" || d.properties.STUSPS == "MA" || d.properties.STUSPS == "ME" || d.properties.STUSPS == "DC") { return "#0258a0"; }
                     else if (d.properties.STUSPS == "AR" || d.properties.STUSPS == "LA" || d.properties.STUSPS == "MS" || d.properties.STUSPS == "AL" || d.properties.STUSPS == "GA") { return "#5BBF48"; }
@@ -66,7 +66,7 @@ class BigMap {
                     else if (d.properties.STUSPS == "MA") { return "#8B4513"; }
                     else if (d.properties.STUSPS == "SD") { return "#DAA520"; }
                     else if (d.properties.STUSPS == "NH") { return "#999999"; }
-                    else { return "#dddddd"; }
+                    else { return "#cccccc"; }
                 }
             })
             .style("stroke-width", "1")
@@ -79,9 +79,11 @@ class BigMap {
             .enter()
             .append("svg:text")
             .text(function(d){
-                if (d.properties.STUSPS != "MD" && d.properties.STUSPS != "CT" && d.properties.STUSPS != "MA" && d.properties.STUSPS != "RI" && d.properties.STUSPS != "VT" && d.properties.STUSPS != "NH" && d.properties.STUSPS != "DE" && d.properties.STUSPS != "NJ" && d.properties.STUSPS != "HI" && d.properties.STUSPS != "DC") { 
-                    return d.properties.STUSPS;
-                }
+               if (d.properties.STUSPS != "DC") { return d.properties.STUSPS; }
+                
+                // if (d.properties.STUSPS != "MD" && d.properties.STUSPS != "CT" && d.properties.STUSPS != "MA" && d.properties.STUSPS != "RI" && d.properties.STUSPS != "VT" && d.properties.STUSPS != "NH" && d.properties.STUSPS != "DE" && d.properties.STUSPS != "NJ" && d.properties.STUSPS != "HI" && d.properties.STUSPS != "DC") { 
+                //     return d.properties.STUSPS;
+                // }
             })
             .attr("x", function(d){
                 if (d.properties.STUSPS == "LA" || d.properties.STUSPS == "CA") { return path.centroid(d)[0] - 7; }

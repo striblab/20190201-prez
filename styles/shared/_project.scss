@@ -327,8 +327,8 @@
 		font-weight:900 !important;
 		font-size:0.56em !important;
 		pointer-events:none !important;
-		// stroke: #000000 !important;
-		// stroke-width:0.2px !important;
+		stroke: #333333 !important;
+		stroke-width:0.5px !important;
 	}
 
 	.dfl {
@@ -691,6 +691,6 @@ text {
 			display:none !important;
 		}
 		.state-block {
-			padding:8.2px !important;
+			padding-top:8px !important;
 		}
 }
