@@ -71,7 +71,7 @@
 
 		}
 		
-		.pct {
+		.votes {
 			@media (max-width: 420px) {
         display: none;
       }
@@ -317,9 +317,9 @@
 		height:30px;
 		width:30px;
 		color:#ffffff;
-		padding:6.47px;
+		padding:6.5px;
 		font-weight:bold;
-		font-size:0.7em;
+		font-size:1em !important;
 		display:inline-block;
 	}
 
@@ -327,8 +327,8 @@
 		font-weight:900 !important;
 		font-size:0.56em !important;
 		pointer-events:none !important;
-		stroke: #333333 !important;
-		stroke-width:0.5px !important;
+		stroke: #000000 !important;
+		stroke-width:0.6px !important;
 	}
 
 	.dfl {
@@ -460,11 +460,12 @@ h2 {
 		margin-left:auto;
 		width:auto !important;
 		margin-right:auto;
+		font-size:0.65em;
 	}
 
 
     width:800px;
-	margin-left:auto;
+	  margin-left:auto;
     margin-right:auto;
 
     .counter {

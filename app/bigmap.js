@@ -16,7 +16,7 @@ class BigMap {
         height = 500,
         centered;
         
-        var projection = d3.geoAlbersUsa().scale(1000).translate([250, 290]);
+        var projection = d3.geoAlbersUsa().scale(1000).translate([250, 240]);
 
         var path = d3.geoPath()
             .projection(projection);
@@ -44,7 +44,7 @@ class BigMap {
                     else if (d.properties.STUSPS == "OH") { return "#7F98AA"; }
                     else if (d.properties.STUSPS == "NH") { return "#A7E6E3"; }
                     else if (d.properties.STUSPS == "FL") { return "#5BBF48"; }
-                    else { return "#cccccc"; }
+                    else { return "#dddddd"; }
                 } else if (self.race == 1) {
                     if (d.properties.STUSPS == "WA" || d.properties.STUSPS == "TX" || d.properties.STUSPS == "MN" || d.properties.STUSPS == "MI" || d.properties.STUSPS == "WV" || d.properties.STUSPS == "PA" || d.properties.STUSPS == "MD" || d.properties.STUSPS == "CT" || d.properties.STUSPS == "RI" || d.properties.STUSPS == "MA" || d.properties.STUSPS == "ME" || d.properties.STUSPS == "DC") { return "#0258a0"; }
                     else if (d.properties.STUSPS == "AR" || d.properties.STUSPS == "LA" || d.properties.STUSPS == "MS" || d.properties.STUSPS == "AL" || d.properties.STUSPS == "GA") { return "#5BBF48"; }
@@ -66,7 +66,7 @@ class BigMap {
                     else if (d.properties.STUSPS == "MA") { return "#8B4513"; }
                     else if (d.properties.STUSPS == "SD") { return "#DAA520"; }
                     else if (d.properties.STUSPS == "NH") { return "#999999"; }
-                    else { return "#cccccc"; }
+                    else { return "#dddddd"; }
                 }
             })
             .style("stroke-width", "1")
